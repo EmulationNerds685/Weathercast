@@ -1,0 +1,26 @@
+
+@import "tailwindcss";
+@layer base {
+  :root {
+    --primary: #EAECC6;
+    --accent: #2BC0E4;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--primary);
+  }
+  .bg-primary {
+    background-color: var(--primary);
+  }
+  .text-accent {
+    color: var(--accent);
+  }
+  .bg-accent {
+    background-color: var(--accent);
+  }
+  .border-accent {
+    border-color: var(--accent);
+  }
+}
