@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AdditionalInfo = ({ visibility }) => (
+const Additional = ({ visibility }) => (
   <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6">
     <div className="bg-accent text-primary rounded-xl shadow-lg p-6">
       <h3 className="text-xl font-bold mb-2">UV Index</h3>
@@ -29,4 +29,4 @@ const AdditionalInfo = ({ visibility }) => (
   </div>
 );
 
-export default AdditionalInfo;
+export default Additional;

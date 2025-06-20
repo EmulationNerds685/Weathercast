@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import CurrentWeather from './components/CurrentWeather';
 import Forecast from './components/Forecast';
-import AdditionalInfo from './components/Additionalinfo';
+import Additional from './components/Additional';
 import Loader from './components/Loader';
 import getWeatherIcon from './utils/getWeatherIcon';
 
@@ -140,7 +140,7 @@ function App() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <CurrentWeather weatherData={weatherData} unit={unit} />
             <Forecast forecast={weatherData.forecast} />
-            <AdditionalInfo visibility={weatherData.visibility} />
+            <Additional visibility={weatherData.visibility} />
           </div>
         ) : (
           <div className="text-center py-20">
